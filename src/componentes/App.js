@@ -2,8 +2,6 @@ import React from "react";
 import Navbar from "./navbar";
 import Proyectos from "./Proyectos";
 
-let pagina = "inicio";
-
 function App() {
 
     return (

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 function Navbar(props) {
     const clasesNav = "navbar navbar-expand-lg bg-body-tertiary " + props

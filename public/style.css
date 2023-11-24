@@ -10,6 +10,9 @@ footer {
 
 #marca {
     margin-left: 7%;
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.4rem;
+    color: #45474B;
 }
 
 #navbarScroll {

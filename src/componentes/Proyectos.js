@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonBaseDemo from "./fotoBotones";     
+import ButtonBaseDemo from "./fotoBotones"; 
 
 function Proyectos() {
     return (
