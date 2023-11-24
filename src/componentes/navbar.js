@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Navbar(props) {
-    const clasesNav = "navbar navbar-expand-lg bg-body-tertiary " + props.placement.toString();
+    const clasesNav = "navbar navbar-expand-lg bg-body-tertiary " + props
+        .placement
+        .toString();
     return (
-        <nav
-            className= {clasesNav}
-            id="navbar">
+        <nav className={clasesNav} id="navbar">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#" id="marca">{props.marca}</a>
                 <button
@@ -29,7 +29,7 @@ function Navbar(props) {
                         <li className="nav-item">
                             <a className="nav-link" href="#">{props.link3}</a>
                         </li>
-                        {/* 
+                        {/*
                         MENU DROP
                         <li className="nav-item dropdown">
                             <a
@@ -52,7 +52,8 @@ function Navbar(props) {
                                     <a className="dropdown-item" href="#">{props.accion3}</a>
                                 </li>
                             </ul>
-                        </li> */}
+                        </li> */
+                        }
                     </ul>
                 </div>
             </div>

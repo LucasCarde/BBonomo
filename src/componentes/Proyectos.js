@@ -1,16 +1,9 @@
 import React from "react";
-import Navbar from "./navbar";
-import ButtonBaseDemo from "./fotoBotones";
+import ButtonBaseDemo from "./fotoBotones";     
 
-function App() {
+function Proyectos() {
     return (
         <div>
-            <Navbar
-                placement="sticky-top"
-                marca="BBonomo"
-                link1="Inicio"
-                link2="Proyectos"
-                link3="Fotografia"/>
 
             <ButtonBaseDemo
                 title="Edificio"
@@ -55,4 +48,4 @@ function App() {
     )
 }
 
-export default App;
+export default Proyectos;
