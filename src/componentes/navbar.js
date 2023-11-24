@@ -21,39 +21,14 @@ function Navbar(props) {
                 <div className="collapse navbar-collapse" id="navbarScroll">
                     <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">{props.link1}</a>
+                            <a className="nav-link active" aria-current="page" href="#" onClick={props.cambiarPag} id={props.link1}>{props.link1}</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">{props.link2}</a>
+                            <a className="nav-link" href="#" onClick={props.cambiarPag} id={props.link2}>{props.link2}</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">{props.link3}</a>
+                            <a className="nav-link" href="#" onClick={props.cambiarPag} id={props.link3}>{props.link3}</a>
                         </li>
-                        {/*
-                        MENU DROP
-                        <li className="nav-item dropdown">
-                            <a
-                                className="nav-link dropdown-toggle"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                {props.link3}
-                            </a>
-                            <ul className="dropdown-menu">
-                                <li>
-                                    <a className="dropdown-item" href="#">{props.accion1}</a>
-                                </li>
-                                <li>
-                                    <a className="dropdown-item" href="#">{props.accion2}</a>
-                                </li>
-                                <li><hr className="dropdown-divider"/></li>
-                                <li>
-                                    <a className="dropdown-item" href="#">{props.accion3}</a>
-                                </li>
-                            </ul>
-                        </li> */
-                        }
                     </ul>
                 </div>
             </div>

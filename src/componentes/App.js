@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "./navbar";
 import Proyectos from "./Proyectos";
 
 function App() {
+    const [pag, setPagina] = useState("Inicio")
+    function cambiarPagina(event){
+        const pagina = event.target.id;
+        setPagina(pagina);
+    }
 
     return (
         <div>
@@ -11,8 +16,10 @@ function App() {
                 marca="BBonomo"
                 link1="Inicio"
                 link2="Proyectos"
-                link3="Fotografia"/>
-            <Proyectos/>
+                link3="Fotografia"
+                cambiarPag = {cambiarPagina}
+                />
+            {pag == "Proyectos" && <Proyectos/>}
         </div>
     )
 }
