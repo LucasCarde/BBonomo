@@ -1,0 +1,27 @@
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 99%;
+    height: 2.5rem;
+
+}
+
+#marca {
+    margin-left: 7%;
+}
+
+#navbarScroll {
+    position: absolute;
+    right: 7%;
+}
+
+.contador{
+    text-align: center;
+    margin: 10% auto;
+}
+
+#cambiarContador{
+    margin: 1%;
+}
