@@ -78,34 +78,36 @@ const ImageMarked = styled('span')(({theme}) => ({
 }));
 
 export default function ButtonBaseDemo(props) {
-    const urlFotico = "url(" + props.url.toString() + ")";    
+    const urlFotico = "url(" + props
+        .url
+        .toString() + ")";
     return (
-            <ImageButton
-                focusRipple="focusRipple"
-                key={props.title}
+        <ImageButton
+            focusRipple="focusRipple"
+            key={props.title}
+            style={{
+                width: props.width
+            }}>
+            <ImageSrc
                 style={{
-                    width: props.width
-                }}>
-                <ImageSrc
-                    style={{
-                        backgroundImage: urlFotico
-                    }}/>
-                <ImageBackdrop className="MuiImageBackdrop-root"/>
-                <Image>
-                    <Typography
-                        component="span"
-                        variant="subtitle1"
-                        color="inherit"
-                        sx={{
-                            position: 'relative',
-                            p: 4,
-                            pt: 2,
-                            pb: (theme) => `calc(${theme.spacing(1)} + 6px)`
-                        }}>
-                        {props.title}
-                        <ImageMarked className="MuiImageMarked-root"/>
-                    </Typography>
-                </Image>
-            </ImageButton>
+                    backgroundImage: urlFotico
+                }}/>
+            <ImageBackdrop className="MuiImageBackdrop-root"/>
+            <Image>
+                <Typography
+                    component="span"
+                    variant="subtitle1"
+                    color="inherit"
+                    sx={{
+                        position: 'relative',
+                        p: 4,
+                        pt: 2,
+                        pb: (theme) => `calc(${theme.spacing(1)} + 6px)`
+                    }}>
+                    {props.title}
+                    <ImageMarked className="MuiImageMarked-root"/>
+                </Typography>
+            </Image>
+        </ImageButton>
     );
 }
