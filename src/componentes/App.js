@@ -1,25 +1,30 @@
-import React, {useState} from "react";
+import React from "react";
 import Navbar from "./navbar";
 import Proyectos from "./Proyectos";
+import Inicio from "./inicio";
+import Fotografia from "./fotografia";
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 
 function App() {
-    const [pag, setPagina] = useState("Inicio")
-    function cambiarPagina(event) {
-        const pagina = event.target.id;
-        setPagina(pagina);
-    }
 
     return (
         <div>
-            <Navbar
-                placement="sticky-top"
-                marca="BBonomo"
-                link1="Inicio"
-                link2="Proyectos"
-                link3="Fotografia"
-                cambiarPag={cambiarPagina}/> {pag == "Proyectos" && <Proyectos/>}
-            {pag == "Inicio" && "inicio"}
-            {pag == "Fotografia" && "Fotografia"}
+
+            <Router>
+                <Navbar
+                    placement="sticky-top"
+                    marca="BBonomo"
+                    link1="Inicio"
+                    link2="Proyectos"
+                    link3="Fotografia"/>
+
+                <Routes>
+                    <Route path='/' element={<Inicio/>}/>
+                    <Route path='/proyectos' element={<Proyectos/>}/>
+                    <Route path='/fotografia' element={<Fotografia/>}/>
+
+                </Routes>
+            </Router>
         </div>
     )
 }
