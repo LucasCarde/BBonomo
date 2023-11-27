@@ -8,7 +8,8 @@ function Navbar(props) {
     return (
         <nav className={clasesNav} id="navbar">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#" id="marca">{props.marca}</a>
+            <Link className="links" to='/'>
+                <a className="navbar-brand" id={props.marca}>{props.marca}</a></Link>
                 <button
                     className="navbar-toggler"
                     type="button"
